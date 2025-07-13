@@ -10,5 +10,5 @@ class Solution:
             else:
                 i += 1
 
-        del nums[j+1:]
+
         return j+1
