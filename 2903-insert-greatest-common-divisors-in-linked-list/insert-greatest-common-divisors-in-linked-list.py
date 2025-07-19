@@ -10,7 +10,6 @@ class Solution:
             if remainder == 0:
                 return num2
             num1, num2 = num2, remainder
-        return 1
         
     def insertGreatestCommonDivisors(self, head: Optional[ListNode]) -> Optional[ListNode]:
         current = head
