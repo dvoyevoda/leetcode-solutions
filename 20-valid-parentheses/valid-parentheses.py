@@ -14,27 +14,18 @@ class Solution:
                 stack.append(char)    
 
             if char == ')':
-                if stack:
-                    if stack[-1] == '(':
-                        stack.pop()
-                    else:
-                        return False
+                if stack and stack[-1] == '(':
+                    stack.pop()
                 else:
                     return False
             if char == '}':
-                if stack:
-                    if stack[-1] == '{':
-                        stack.pop()
-                    else:
-                        return False
+                if stack and stack[-1] == '{':
+                    stack.pop()
                 else:
                     return False
             if char == ']':
-                if stack:
-                    if stack[-1] == '[':
-                        stack.pop()
-                    else:
-                        return False
+                if stack and stack[-1] == '[':
+                    stack.pop()
                 else:
                     return False
 
