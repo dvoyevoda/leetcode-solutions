@@ -1,7 +1,6 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        first = middle = 0
-        last = len(nums)-1
+        first, last = 0, len(nums)-1 
 
         while first <= last:
             middle = (first + last)//2
