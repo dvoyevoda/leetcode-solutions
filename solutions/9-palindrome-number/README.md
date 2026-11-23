@@ -1,0 +1,38 @@
+<!-- leetgit:generated -->
+<!-- leetgit:state eyJzbHVnIjoicGFsaW5kcm9tZS1udW1iZXIiLCJwcm9ibGVtIjp7InRpdGxlIjoiUGFsaW5kcm9tZSBOdW1iZXIiLCJmcm9udGVuZElkIjoiOSIsImRpZmZpY3VsdHkiOiJFYXN5IiwidG9waWNzIjpbXX0sInJvd3MiOlt7ImlkIjoiMjIwMTU2NDY1NSIsImxhbmd1YWdlIjoicHl0aG9uMyIsImFjY2VwdGVkQXQiOiIyMDI2LTExLTIzVDAwOjA0OjIyLjY1MVoiLCJzdGF0cyI6eyJydW50aW1lIjoiMTggbXMiLCJtZW1vcnkiOiIxOS4yIE1CIiwicnVudGltZVBlcmNlbnRpbGUiOjIxLjAxLCJtZW1vcnlQZXJjZW50aWxlIjozOC4wNSwidG90YWxUZXN0cyI6MTE1MTUsInRlc3RzUGFzc2VkIjoxMTUxNX19XX0= -->
+
+# 9. Palindrome Number
+
+**Easy**
+
+## Problem
+
+[Read the problem on LeetCode](https://leetcode.com/problems/palindrome-number/)
+
+## Submission results
+
+| Language | Verdict | Runtime | Memory | Tests passed | Date (UTC) |
+| --- | --- | ---: | ---: | ---: | --- |
+| [Python 3](python3.py) | [Accepted](https://leetcode.com/problems/palindrome-number/submissions/2201564655/) | 18 ms (beats 21.01%) | 19.2 MB (beats 38.05%) | 11515/11515 | 2026-11-23 |
+
+## Solution · Python 3
+
+[View source](python3.py)
+
+<!-- leetgit:preview -->
+```python
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if str(x)[0] == '-':
+            return False
+        num = ''
+        for i in str(x):
+            num = i + num
+        if int(num) == x:
+            return True
+        else:
+            return False
+```
+<!-- /leetgit:preview -->
+
+<!-- /leetgit:generated -->
